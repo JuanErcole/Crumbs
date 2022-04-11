@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Franquicias</title>
+        <link rel="stylesheet" href="../stylesheets/franquicias.css">
+    </head>
+    <body>
+        <header>
+            <section class="franquicias__tituloPrincipal">
+                <h1>Franquicias</h1>
+            </section>    
+            <section class="franquicias__headerIconos">
+                <a href="https://www.facebook.com/sandwicheriascrumbs" target="bank"><img class="headerIconos" src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="icon" width="45px" height="45px"></a>
+                
+                <a href=""><img class="headerIconos" src="https://cdn-icons-png.flaticon.com/512/1384/1384007.png" alt="iconoWs" width="45px" height="45px"></a>
+
+                <a href="https://www.instagram.com/sandwicheriascrumbs/?hl=es-la" target="blank"><img class="headerIconos" src="https://cdn.icon-icons.com/icons2/1995/PNG/512/instagram_internet_media_network_social_icon_123258.png" alt="icon ig" width="45px" height="45px"></a>
+            </section>
+
+            <!--botones header-->
+            <section class="franquicias__menu">
+                <nav class="franquicias__headerPages">
+                    <ul class="franquicias__pages">
+                        <li class="franquicias__headerUlist" id="botonHome"><a href="../index.html">Home</li>
+                        <li class="franquicias__headerUlist" id="botonEmpresa"><a href="/pages/empresa.html">Empresa</a></li>
+                        <li class="franquicias__headerUlist" id="botonServicios"><a href="/pages/servicios.html">Servicios</a></li>
+                        <li class="franquicias__headerUlist" id="botonContacto"><a href="/pages/contacto.html">Contacto</a></li>  
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main class="franquicias__mainContainer">
+
+            <section class="franquicias__mainTitulo">
+                <h2>¿Te interesa invertir?</h2>
+            </section>
+
+            <section class="franquicias__mainParrafo">    
+                <p>Si confias en nostros porque conoces nuestros productos y la forma en la que trabajamos, tenemos una propuesta para vos.</p>
+            </section>
+            
+            <section class="franquicias__mainForm">
+                <h4>Completa el siguiente formulario y nos comunicaremos contigo a la brevedad.</h4>
+
+                <form action="/destino" method="get" enctype="">
+                    <fieldset>
+                        <legend><i><strong>Gracias por confiar</strong></i></legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombreCliente" id="nombre" required placeholder="Escriba su nombre"><br><br>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellidoCliente" id="apellido" required placeholder="Escriba su apellido"><br><br>
+                        <label for="correo">Correo</label>
+                        <input type="text" name="correoCliente" id="correo" required placeholder="Correo Electronico"><br><br>
+                        <label for="telefono">Telefono</label>
+                        <input type="text" name="telefonoCliente" id="correo" required placeholder="+54"><br><br>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <span><a href="/index.html">inicio</a></span>
+            <span><a href="/pages/contacto.html">contacto</a></span>
+        </footer>
+    </body>
+</html>

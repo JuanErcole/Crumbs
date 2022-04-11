@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-.-.-.-.-.-.- INICIO DEL HEADER -.-.-.--.-.-*/
+
+header {
+    background-color: rgb(201, 50,  50);
+    border-bottom: 2px;
+    border-style: solid;
+}
+
+.empresa__tituloPrincipal {
+    font-size: 60px;
+    font-family: cursive;
+}
+
+.empresa__iconos {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.empresa__menu {
+    position: relative;
+}
+
+.empresa__headerPages {
+    display: inline-block;
+    position: relative;
+    left: 40%;
+}
+
+.empresa__headerUlist {
+    display: inline-block;
+    padding: 5px;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*-.-.-.-.-.-.-.- FIN DEL HEADER -.-.-.-.-.-.-*/
+
+/*-.-.-.-.-.- INICIO DEL MAIN -.-.-.-.-.-*/
+
+
+
+.empresa__mainContainer {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 20px;
+    border: 50px;
+    border-top: none;
+    border-bottom: none;
+    border-color: rgb(218, 211, 211);
+    border-style: solid;
+    align-items: center;
+}
+
+.empresa__mainTitulo {
+    padding: 25px;
+}
+
+.empresa__mainParrafo {
+    padding: 25px;
+}
+
+.empresa__mainSucursales {
+    font-size: 25px;
+}
+
+
+
+footer {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(201, 50,  50);
+    height: 35px;
+}
+

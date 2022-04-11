@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../stylesheets/contacto.css">
+    </head>
+    <body>
+        <header class="contacto__headerContainer">
+            <article class="contacto__tituloPrincipal">
+                <h1">Contacto</h1>
+            </article>
+    
+            <!--botones header-->
+            <section class="contacto__menu">
+                <nav class="contacto__headerPages">
+                    <label for="menu" class="nav__label">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <input type="checkbox" id="menu" class="nav__input">
+                    <ul class="nav__menu">
+                        <a href="../index.html" class="nav__botones">Home</a>
+                        <a href="servicios.html" class="nav__botones">Servicios</a>
+                        <a href="contacto.html" class="nav__botones">Contacto</a>
+                        <a href="franquicias.html" class="nav__botones">Franquicias</a>
+                    </ul>
+                </nav>
+            </section>
+            
+            <!--iconos de redes-->
+            <section class="header__iconos">
+                <a href="https://www.facebook.com/sandwicheriascrumbs" target="bank"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/sandwicheriascrumbs/?hl=es-la" target="blank"><i class="fa-brands fa-instagram"></i></a>
+            </section>
+        </header>
+        <main class="contacto__mainContainer">
+
+            <section class="contacto__mainTitulo">
+                <h2>Nos comunicaremos a la brevedad.</h2>
+            </section>
+
+            
+            <section class="contacto__formulario">
+                <form action="Enviar respuesta">
+                    <fieldset class="formulario">
+                        <legend>Formulario Crumbs</legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombreCliente" id="nombre" required placeholder="Escriba su nombre">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellidoCliente" id="apellido" required placeholder="Escriba su apellido">
+                        <label for="correo">Correo</label>
+                        <input type="text" name="correoCliente" id="correo" required placeholder="Correo Electronico">
+                        <label for="telefono">Telefono</label>
+                        <input type="text" name="telefonoCliente" id="telefono" required placeholder="+54">
+
+                        <p>Marca el casillero de tu interes.</p>
+                        
+                        <label>
+                            <input type="checkbox" value="servicios" name="interes">Servicios
+                        </label>
+                        <label>
+                            <input type="checkbox" value="frranquicias" name="interes">Franquicias    
+                        </label>
+                        <label>
+                            <input type="checkbox" value="otro" name="interes">Otro
+                        </label>
+                        <hr>
+
+                        <p>Soy:</p>
+
+                        <label>
+                            <input type="radio" name="soy" checked>Una persona
+                        </label>
+                        <label>
+                            <input type="radio" name="soy">Un negocio
+                        </label>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <span><a href="../index.html">inicio</a></span>
+            <span><a href="contacto.html">contacto</a></span>
+        </footer>
+    </body>
+</html>

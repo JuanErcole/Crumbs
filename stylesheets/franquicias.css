@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(201, 50, 50);
+    padding: 10px;
+    position: relative;
+    border-bottom: solid 2px;
+}
+
+.franquicias__tituloPrincipal {
+    font-size: 60px;
+    font-family: cursive;
+}
+
+.franquicias__headerIconos {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.franquicias__menu {
+    position: relative;
+}
+
+.franquicias__headerPages {
+    display: inline-block;
+    position: relative;
+    left: 40%;
+}
+
+.franquicias__headerUlist {
+    display: inline-block;
+    padding: 5px;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*-.-.-.-.-.-.-.- FIN DEL HEADER -.-.-.-.-.-.-*/
+
+/*-.-.-.-.-.- INICIO DEL MAIN -.-.-.-.-.-*/
+
+.franquicias__mainContainer {
+    display: flex;
+    height: 440px;
+    padding: 25px;
+    flex-flow: column wrap;
+    border: solid 60px;
+    border-color: rgb(218, 211, 211);
+    border-bottom: none;
+    border-top: none;   
+}
+
+.franquicias__mainTitulo {
+    padding: 15px;
+}
+
+.franquicias__mainParrafo{
+    padding: 15px;
+}
+
+.franquicias__mainForm {
+    padding: 15px;
+}
+
+
+footer {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(201, 50,  50);
+    height: 35px;
