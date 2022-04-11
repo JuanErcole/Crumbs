@@ -5,43 +5,143 @@
 
 /*-.-.-.-.-.-.- INICIO DEL HEADER -.-.-.--.-.-*/
 
-header {
-    background-color: rgb(201, 50,  50);
-    border-bottom: 2px;
-    border-style: solid;
+body{
+    background-color: rgb(218, 211, 211);
+}
+
+.empresa__headerContainer {
+    background-color: rgb(201, 50, 50);
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .empresa__tituloPrincipal {
-    font-size: 60px;
-    font-family: cursive;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
-.empresa__iconos {
-    position: fixed;
-    top: 10px;
-    right: 10px;
+.header__iconos {
+    font-size: 3rem;
 }
 
-.empresa__menu {
-    position: relative;
+.header__iconos a{
+    color: black;
+    transition: 0.8s;
 }
 
-.empresa__headerPages {
-    display: inline-block;
-    position: relative;
-    left: 40%;
+.header__iconos a:hover{
+    color: white
 }
 
-.empresa__headerUlist {
-    display: inline-block;
-    padding: 5px;
-    font-family: cursive;
-    font-size: 25px;
+.nav__input:checked + .nav__menu {                /*cuando esta chekeado el input (+ = a hermano adyacente)*/
+    background-color: rgb(201, 50, 50);
 }
 
-a {
+.nav__menu{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+  font-size: 2rem;
+}
+
+.nav__botones{
     text-decoration: none;
     color: black;
+    --subrrayado: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav__botones::after{
+    content: "";
+    display: block;
+    background: black;
+    height: 3px;
+    width: 95%;
+    margin-top: 3px;
+    clip-path: var(--subrrayado);
+    transition: 0.5s;
+}
+
+.nav__botones:hover{
+    --subrrayado: polygon(0 0, 80% 0, 99% 100%, 0 100%);
+}
+
+.nav__label, .nav__input{
+    display: none;
+}
+
+@media (max-width: 1100px){
+
+    .nav__label{
+        display: block;
+        cursor: pointer;
+        font-size: 2.2rem;
+    }
+
+
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: rgba(201, 50, 50);
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 0.7s ease-in-out;
+    }
+
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+
+    }
+}
+
+@media (max-width: 700px){
+
+    .home__tituloPrincipal{
+        font-size: 2rem;
+    }
+
+    .header__iconos{
+        display: none;
+    }
+
+    .nav__label{
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: rgb(201, 50, 50);
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 0.7s ease-in-out;
+    }
+
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+
+    }
 }
 
 /*-.-.-.-.-.-.-.- FIN DEL HEADER -.-.-.-.-.-.-*/
@@ -51,38 +151,35 @@ a {
 
 
 .empresa__mainContainer {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    padding: 20px;
-    border: 50px;
-    border-top: none;
-    border-bottom: none;
-    border-color: rgb(218, 211, 211);
-    border-style: solid;
-    align-items: center;
-}
-
-.empresa__mainTitulo {
-    padding: 25px;
-}
-
-.empresa__mainParrafo {
-    padding: 25px;
-}
-
-.empresa__mainSucursales {
-    font-size: 25px;
+    background-color: white;
+    min-height: 90vh;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px;
+   
 }
 
 
+/*-.-.-.-.-.-.- fin del main -.-.-.-.-.-.-.-*/
+
+/*-.-.-.-.-.-.- inicio del footer -.-.-.-.-.-.-*/
 
 footer {
-    display: block;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    background-color: rgb(201, 50,  50);
-    height: 35px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(201, 50, 50);
+    font-size: 2rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color: white;
 }
 

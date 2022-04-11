@@ -5,33 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresa</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../stylesheets/empresa.css">
 </head>
 <body>
-    <header>
-        <section class="empresa__tituloPrincipal">
-            <h1>Empresa</h1>
-        </section>    
-        <section class="empresa__iconos">
-            <a href="https://www.facebook.com/sandwicheriascrumbs" target="bank"><img class="headerIconos" src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="icon" width="45px" height="45px"></a>
-            
-            <a href=""><img class="headerIconos" src="https://cdn-icons-png.flaticon.com/512/1384/1384007.png" alt="iconoWs" width="45px" height="45px"></a>
-    
-            <a href="https://www.instagram.com/sandwicheriascrumbs/?hl=es-la" target="blank"><img class="headerIconos" src="https://cdn.icon-icons.com/icons2/1995/PNG/512/instagram_internet_media_network_social_icon_123258.png" alt="icon ig" width="45px" height="45px"></a>
-        </section>
-    
+    <header class="empresa__headerContainer">
+        <article class="empresa__tituloPrincipal">
+            <h1 id="tituloPrincipal">Empresa</h1>
+        </article>
+
         <!--botones header-->
         <section class="empresa__menu">
             <nav class="empresa__headerPages">
-                <ul class="empresa__pages">
-                    <li class="empresa__headerUlist" id="botonHome"><a href="../index.html">Home</li>
-                    <li class="empresa__headerUlist" id="botonEmpresa"><a href="empresa.html">Empresa</a></li>
-                    <li class="empresa__headerUlist" id="botonServicios"><a href="/pages/servicios.html">Servicios</a></li>
-                    <li class="empresa__headerUlist" id="botonContacto"><a href="/pages/contacto.html">Contacto</a></li>  
+                <label for="menu" class="nav__label">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox" id="menu" class="nav__input">
+                <ul class="nav__menu">
+                    <a href="index.html" class="nav__botones">Home</a>
+                    <a href="./pages/servicios.html" class="nav__botones">Servicios</a>
+                    <a href="./pages/contacto.html" class="nav__botones">Contacto</a>
+                    <a href="./pages/franquicias.html" class="nav__botones">Franquicias</a>
                 </ul>
             </nav>
         </section>
-
+        
+        <!--iconos de redes-->
+        <section class="header__iconos">
+            <a href="https://www.facebook.com/sandwicheriascrumbs" target="bank"><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/sandwicheriascrumbs/?hl=es-la" target="blank"><i class="fa-brands fa-instagram"></i></a>
+        </section>
     </header>
     <main class="empresa__mainContainer">
 
@@ -54,8 +58,8 @@
 
     </main>
     <footer>
-        <span><a href="/index.html">inicio</a></span>
-        <span><a href="/pages/contacto.html">contacto</a></span>
+        <span><a href="../index.html">inicio</a></span>
+        <span><a href="contacto.html">contacto</a></span>
     </footer>
 </body>
 </html>
