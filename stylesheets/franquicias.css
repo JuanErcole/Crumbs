@@ -3,78 +3,245 @@
     padding: 0;
 }
 
-header {
+html{
+    font-family: 'Roboto';
+}
+
+body{
+    background-color: rgb(218, 211, 211);
+}
+
+.franquicias__headerContainer {
     background-color: rgb(201, 50, 50);
-    padding: 10px;
-    position: relative;
-    border-bottom: solid 2px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .franquicias__tituloPrincipal {
-    font-size: 60px;
-    font-family: cursive;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
-.franquicias__headerIconos {
-    position: fixed;
-    top: 10px;
-    right: 10px;
+.header__iconos {
+    font-size: 3rem;
 }
 
-.franquicias__menu {
-    position: relative;
+.header__iconos a{
+    color: black;
+    transition: 0.8s;
 }
 
-.franquicias__headerPages {
-    display: inline-block;
-    position: relative;
-    left: 40%;
+.header__iconos a:hover{
+    color: white
 }
 
-.franquicias__headerUlist {
-    display: inline-block;
-    padding: 5px;
-    font-family: cursive;
-    font-size: 25px;
+.nav__input:checked + .nav__menu {
+    background-color: rgb(201, 50, 50);
 }
 
-a {
+.nav__menu{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+  font-size: 2rem;
+}
+
+.nav__botones{
     text-decoration: none;
     color: black;
+    --subrrayado: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav__botones::after{
+    content: "";
+    display: block;
+    background: black;
+    height: 3px;
+    width: 95%;
+    margin-top: 3px;
+    clip-path: var(--subrrayado);
+    transition: 0.5s;
+}
+
+.nav__botones:hover{
+    --subrrayado: polygon(0 0, 80% 0, 99% 100%, 0 100%);
+}
+
+.nav__label, .nav__input{
+    display: none;
+}
+
+@media (max-width: 1100px){
+
+    .servicios__menu{
+        order: 3;
+    }
+
+    .nav__label{
+        display: block;
+        cursor: pointer;
+        font-size: 2.2rem;
+    }
+
+
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: rgba(201, 50, 50);
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 0.7s ease-in-out;
+    }
+
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .servicios__headerContainer {
+        background-color: rgb(201, 50, 50);
+        font-family: 'Roboto', sans-serif;
+        margin: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+
+    .header__iconos{
+        display: none;
+    }
+
+    .nav__label{
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: rgb(201, 50, 50);
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 0.7s ease-in-out;
+    }
+
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+
+    }
 }
 
 /*-.-.-.-.-.-.-.- FIN DEL HEADER -.-.-.-.-.-.-*/
 
 /*-.-.-.-.-.- INICIO DEL MAIN -.-.-.-.-.-*/
 
-.franquicias__mainContainer {
-    display: flex;
-    height: 440px;
-    padding: 25px;
-    flex-flow: column wrap;
-    border: solid 60px;
-    border-color: rgb(218, 211, 211);
-    border-bottom: none;
-    border-top: none;   
+.franquicias__mainContainer{
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto) 250px  ;
+    grid-template-areas: 
+    "titulo"
+    "parrafo"
+    "subtitulo"
+    "formulario"
+    "foto";
+    justify-items: center;
 }
 
-.franquicias__mainTitulo {
-    padding: 15px;
+.franquicias__mainTitulo{
+    font-size: 2rem;
+    grid-area: titulo;
 }
 
 .franquicias__mainParrafo{
-    padding: 15px;
+    grid-area: parrafo;
 }
 
-.franquicias__mainForm {
-    padding: 15px;
+.franquicias__mainSubtitulo{
+    font-size: 1.5rem;
+    grid-area: subtitulo;
 }
 
+.franquicias__mainForm{
+    font-size: 1.2rem;
+    grid-area: formulario;
+}
+
+.franquicias__mainForm form{
+    display: flex;
+    align-items: center;
+    align-content: space-evenly;
+
+}
+
+.franquicias__mainFoto{
+    grid-area: foto;
+    width: 100%;
+    height: auto; 
+}
+
+.franquicias__mainFoto img{
+    object-fit: cover;
+    border-radius: 10px;
+    height: 250px;
+    width: 100%;
+}
+
+
+
+
+/*-.-.-.-.-.-.-.- FIN DEL MAIN -.-.-.-.-.-*/
+
+/*-.-.-.-.-.-.-.- INICIO DEL FOOTER -.-.-.-.-.-.-*/
 
 footer {
-    display: block;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    background-color: rgb(201, 50,  50);
-    height: 35px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(201, 50, 50);
+    font-size: 2rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color: white;
+}
