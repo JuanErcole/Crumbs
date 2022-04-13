@@ -80,6 +80,10 @@ body{
 
 @media (max-width: 1150px){
 
+    .franquicias__headerContainer {
+        margin: 10px;
+    }
+
     .servicios__menu{
         order: 3;
     }
@@ -221,6 +225,14 @@ body{
     width: 100%;
 }
 
+@media (max-width: 1150px){
+
+    .franquicias__mainContainer{
+        margin: 10px;
+    }
+
+}
+
 
 
 
@@ -245,3 +257,13 @@ footer a{
 footer a:hover{
     color: white;
 }
+
+@media (max-width: 1150px){
+
+    footer{
+        margin: 10px;
+    }
+
+}
+
+

@@ -73,6 +73,10 @@
 
 @media (max-width: 1100px){
 
+    .contacto__headerContainer{
+        margin: 10px;
+    }
+
     .nav__label{
         display: block;
         cursor: pointer;
@@ -172,6 +176,14 @@ body {
     text-align: center;
 }
 
+@media (max-width: 1100px){
+
+    .contacto__mainContainer{
+        margin: 10px;
+    }
+}
+
+
 .contacto__mainTitulo {
     font-size: 1.2rem;
     grid-area: titulo;
@@ -221,6 +233,14 @@ footer a{
 
 footer a:hover{
     color: white;
+}
+
+@media (max-width: 1150px){
+
+    footer{
+        margin: 10px;
+    }
+
 }
 
 
