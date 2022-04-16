@@ -77,6 +77,7 @@
     }
 
     .servicios__headerContainer{
+        background: radial-gradient(rgba(201, 50, 50), white);
         margin: 10px;
     }
 

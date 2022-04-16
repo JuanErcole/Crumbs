@@ -82,6 +82,10 @@ body{
         background: linear-gradient(black, white);
     }
 
+    .empresa__headerContainer{
+        background: radial-gradient(rgba(201, 50, 50), white);
+    }
+
     .empresa__menu{
         order: 3;
     }
